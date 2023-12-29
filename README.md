@@ -2,7 +2,7 @@
 Canadian Computing Contest Junior Problems
 
 2006 J1: At Chip’s Fast Food emporium there is a very simple menu. Each food item is selected by entering
-a digit choice. Write a program that will compute the total Calories of a meal. 
+a digit choice. Write a program that will compute the total Calories of a meal. -----> View code for format
 
 Here are the three burger choices:                               Here are the three drink choices:
 1 – Cheeseburger (461 Calories)                                  1 – Soft Drink ( 130 Calories)
