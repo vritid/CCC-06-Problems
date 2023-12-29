@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class J1_2006 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int burger, drink, side, dessert;
+        int burgerCalories = 0, drinkCalories = 0, sideCalories = 0, dessertCalories = 0;
+        
+        //Input: Get Burger Choice
+        System.out.println("Choose a burger:");
+        System.out.println("1 - Cheeseburger (461 Calories)");
+        System.out.println("2 - Fish Burger (431 Calories)");
+        System.out.println("3 - Veggie Burger (420 Calories)");
+        System.out.println("4 - No Burger");
+        burger = input.nextInt();
+
+        
+        //Calculate burger calories
+        if (burger == 1) {
+            burgerCalories = 461;
+        } 
+        else if (burger == 2) {
+            burgerCalories = 431;
+        } 
+        else if (burger == 3) {
+            burgerCalories = 420;
+        }
+        
+        // Get Drink Choice
+        System.out.println("Choose a drink:");
+        System.out.println("1 - Soft Drink (130 Calories)");
+        System.out.println("2 - Orange Juice (160 Calories)");
+        System.out.println("3 - Milk (118 Calories)");
+        System.out.println("4 - No Drink");
+        drink = input.nextInt();
+        
+        //Calculate drink calories
+        if (drink == 1) {
+            drinkCalories = 130;
+        } 
+        else if (drink == 2) {
+            drinkCalories = 160;
+        } 
+        else if (drink == 3) {
+            drinkCalories = 118;
+        }
+        
+        // Get Side Choice
+        System.out.println("Choose a side:");
+        System.out.println("1 - Fries (100 Calories)");
+        System.out.println("2 - Baked Potato (57 Calories)");
+        System.out.println("3 - Chef Salad (70 Calories)");
+        System.out.println("4 - No Side");
+        side = input.nextInt();
+        
+        //Calculate Side calories
+        if (side == 1) {
+            sideCalories = 100;
+        } 
+        else if (side == 2) {
+            sideCalories = 57;
+        } 
+        else if (side == 3) {
+            sideCalories = 70;
+        }
+        
+        //Get Dessert Choice
+        System.out.println("Choose a dessert:");
+        System.out.println("1 - Apple Pie (167 Calories)");
+        System.out.println("2 - Sundae (266 Calories)");
+        System.out.println("3 - Fruit Cup (75 Calories)");
+        System.out.println("4 - No Dessert");
+        dessert = input.nextInt();
+        
+        //Calculate Dessert Calories
+        if (dessert == 1) {
+            dessertCalories = 167;
+        } else if (dessert == 2) {
+            dessertCalories = 266;
+        } else if (dessert == 3) {
+            dessertCalories = 75;
+        }
+        
+        //Calculate total calories
+        int totalCalories = burgerCalories + drinkCalories + sideCalories + dessertCalories;
+        
+        //Print total calories
+        System.out.println("Total calories: " + totalCalories);
+
+
+    }//main
+}//J1_2006
